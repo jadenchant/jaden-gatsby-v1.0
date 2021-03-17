@@ -15,3 +15,7 @@ h1 {
   color: $accent-color-1;
   font-size: 2rem;
 }
+
+@mixin transition-ease {
+  transition: all 0.3 ease-in-out;
+}

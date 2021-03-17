@@ -1,5 +1,17 @@
 @import "config";
 
+@keyframes hamberger-upper {
+  50% {
+    transform: translateY(1vh);
+  }
+}
+
+@keyframes hamberger-lower {
+  50% {
+    transform: translateY(-1vh);
+  }
+}
+
 main.header {
   position: fixed;
   height: 12vh;
@@ -10,10 +22,13 @@ main.header {
     width: 8vh;
     margin-top: 1vh;
     margin-left: 1vh;
+    cursor: pointer;
+    @include transition-ease;
+
     &-icon {
       position: fixed;
-      left: 0;
-      top: 4.2vh;
+      left: 1vh;
+      top: 4.8vh;
       height: 4px;
       width: 8vh;
       background-color: $text-color;
@@ -21,21 +36,40 @@ main.header {
       &::before {
         content: "";
         position: fixed;
-        left: 0;
-        top: 1.5vh;
+        left: 1vh;
+        top: 2vh;
         height: 4px;
         width: 8vh;
         background-color: $text-color;
+        @include transition-ease;
       }
 
       &::after {
         content: "";
         position: fixed;
-        left: 0;
-        top: 7vh;
+        left: 1vh;
+        top: 8vh;
         height: 4px;
         width: 8vh;
         background-color: $text-color;
+        @include transition-ease;
+
+        &:hover {
+          background-color: green;
+        }
+      }
+
+      &.open {
+        &::before {
+          position: fixed;
+          animation-name: hamberger-upper;
+          animation-duration: 1s;
+        }
+
+        &::after {
+          animation-name: hamberger-lower;
+          animation-duration: 1s;
+        }
       }
     }
   }

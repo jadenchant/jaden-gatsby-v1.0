@@ -10,6 +10,34 @@ h1 {
   font-size: 2rem;
 }
 
+@-webkit-keyframes hamberger-upper {
+  50% {
+    -webkit-transform: translateY(1vh);
+            transform: translateY(1vh);
+  }
+}
+
+@keyframes hamberger-upper {
+  50% {
+    -webkit-transform: translateY(1vh);
+            transform: translateY(1vh);
+  }
+}
+
+@-webkit-keyframes hamberger-lower {
+  50% {
+    -webkit-transform: translateY(-1vh);
+            transform: translateY(-1vh);
+  }
+}
+
+@keyframes hamberger-lower {
+  50% {
+    -webkit-transform: translateY(-1vh);
+            transform: translateY(-1vh);
+  }
+}
+
 main.header {
   position: fixed;
   height: 12vh;
@@ -22,12 +50,15 @@ main.header .nav-hamberger {
   width: 8vh;
   margin-top: 1vh;
   margin-left: 1vh;
+  cursor: pointer;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 main.header .nav-hamberger-icon {
   position: fixed;
-  left: 0;
-  top: 4.2vh;
+  left: 1vh;
+  top: 4.8vh;
   height: 4px;
   width: 8vh;
   background-color: #929a9f;
@@ -36,20 +67,43 @@ main.header .nav-hamberger-icon {
 main.header .nav-hamberger-icon::before {
   content: "";
   position: fixed;
-  left: 0;
-  top: 1.5vh;
+  left: 1vh;
+  top: 2vh;
   height: 4px;
   width: 8vh;
   background-color: #929a9f;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 main.header .nav-hamberger-icon::after {
   content: "";
   position: fixed;
-  left: 0;
-  top: 7vh;
+  left: 1vh;
+  top: 8vh;
   height: 4px;
   width: 8vh;
   background-color: #929a9f;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+}
+
+main.header .nav-hamberger-icon::after:hover {
+  background-color: green;
+}
+
+main.header .nav-hamberger-icon.open::before {
+  position: fixed;
+  -webkit-animation-name: hamberger-upper;
+          animation-name: hamberger-upper;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+main.header .nav-hamberger-icon.open::after {
+  -webkit-animation-name: hamberger-lower;
+          animation-name: hamberger-lower;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 /*# sourceMappingURL=Header.css.map */
