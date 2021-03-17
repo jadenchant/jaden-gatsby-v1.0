@@ -1,0 +1,42 @@
+@import "config";
+
+main.header {
+  position: fixed;
+  height: 12vh;
+  width: 100vw;
+  background-color: $background-header;
+  .nav-hamberger {
+    height: 8vh;
+    width: 8vh;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    &-icon {
+      position: fixed;
+      left: 0;
+      top: 4.2vh;
+      height: 4px;
+      width: 8vh;
+      background-color: $text-color;
+
+      &::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 1.5vh;
+        height: 4px;
+        width: 8vh;
+        background-color: $text-color;
+      }
+
+      &::after {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 7vh;
+        height: 4px;
+        width: 8vh;
+        background-color: $text-color;
+      }
+    }
+  }
+}

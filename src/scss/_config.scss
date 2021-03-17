@@ -1,13 +1,17 @@
-$background-color: #363c45;
-$background-navbar: #929a9f;
-$primary-color: #3e90cc;
-$accent-color-1: #c2ffee;
-$accent-color-2: #ffffff;
-$accent-color-3: #ffffff;
-$text-color: #dce0e5;
+$background-color: #dfe0e2;
+$background-header: #363c45;
+$accent-color-1: #3e90cc;
+$accent-color-2: #ff6666;
+$accent-color-3: #c2ffee;
+$text-color: #929a9f;
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  color: $accent-color-1;
+  font-size: 2rem;
 }

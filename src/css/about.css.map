@@ -2,9 +2,9 @@
     "version": 3,
     "mappings": "ACOA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AAED,AAAA,EAAE,CAAC;EACD,KAAK,EAZU,OAAO;EAatB,SAAS,EAAE,IAAI;CAChB",
     "sources": [
-        "../scss/index.scss",
+        "../scss/about.scss",
         "../scss/_config.scss"
     ],
     "names": [],
-    "file": "index.css"
+    "file": "about.css"
 }

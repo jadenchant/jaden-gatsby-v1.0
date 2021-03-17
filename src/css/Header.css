@@ -1,0 +1,55 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #3e90cc;
+  font-size: 2rem;
+}
+
+main.header {
+  position: fixed;
+  height: 12vh;
+  width: 100vw;
+  background-color: #363c45;
+}
+
+main.header .nav-hamberger {
+  height: 8vh;
+  width: 8vh;
+  margin-top: 1vh;
+  margin-left: 1vh;
+}
+
+main.header .nav-hamberger-icon {
+  position: fixed;
+  left: 0;
+  top: 4.2vh;
+  height: 4px;
+  width: 8vh;
+  background-color: #929a9f;
+}
+
+main.header .nav-hamberger-icon::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 1.5vh;
+  height: 4px;
+  width: 8vh;
+  background-color: #929a9f;
+}
+
+main.header .nav-hamberger-icon::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 7vh;
+  height: 4px;
+  width: 8vh;
+  background-color: #929a9f;
+}
+/*# sourceMappingURL=Header.css.map */

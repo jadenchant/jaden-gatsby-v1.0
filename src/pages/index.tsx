@@ -1,10 +1,13 @@
-import * as React from "react"
+import React from "react";
+import Header from "../components/Header";
+import "../css/index.css";
 
-
-// markup
 const IndexPage = () => {
   return (
-  )
-}
+    <main className='index'>
+      <Header />
+    </main>
+  );
+};
 
-export default IndexPage
+export default IndexPage;

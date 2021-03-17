@@ -1,12 +1,13 @@
 import React from "react";
 import Header from "../components/Header";
+import "../css/about.css";
 
-const NotFoundPage = () => {
+const About = () => {
   return (
-    <main className='not-found-page'>
+    <main className='about'>
       <Header />
     </main>
   );
 };
 
-export default NotFoundPage;
+export default About;
