@@ -7,6 +7,9 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
+        name: "Jaden Chant",
+        short_name: "Jaden Chant",
+        start_url: '/',
         icon: "src/images/icon.png",
       },
     },
