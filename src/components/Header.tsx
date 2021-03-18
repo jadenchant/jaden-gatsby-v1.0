@@ -14,12 +14,10 @@ const Header = () => {
       setDropdown(false);
       setHamberger(defaultHamberger + " close");
       setNav(defaultNav + " initial");
-      console.log("dropdown set false");
     } else {
       setDropdown(true);
       setHamberger(defaultHamberger + " open");
       setNav(defaultNav + " final");
-      console.log("dropdown set true");
     }
   };
 
