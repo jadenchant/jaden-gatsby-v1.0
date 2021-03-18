@@ -38,14 +38,14 @@ h1 {
   }
 }
 
-header.header {
+main.head header.header {
   position: fixed;
   height: 12vh;
-  width: 100vw;
+  width: 100%;
   background-color: #363c45;
 }
 
-header.header .nav-hamberger {
+main.head header.header .nav-hamberger {
   height: 8vh;
   width: 8vh;
   margin-top: 1vh;
@@ -55,7 +55,7 @@ header.header .nav-hamberger {
   transition: all 0.3 ease-in-out;
 }
 
-header.header .nav-hamberger-icon {
+main.head header.header .nav-hamberger-icon {
   position: fixed;
   left: 1vh;
   top: 4.8vh;
@@ -64,7 +64,7 @@ header.header .nav-hamberger-icon {
   background-color: #929a9f;
 }
 
-header.header .nav-hamberger-icon::before {
+main.head header.header .nav-hamberger-icon::before {
   content: "";
   position: fixed;
   left: 1vh;
@@ -76,7 +76,7 @@ header.header .nav-hamberger-icon::before {
   transition: all 0.3 ease-in-out;
 }
 
-header.header .nav-hamberger-icon::after {
+main.head header.header .nav-hamberger-icon::after {
   content: "";
   position: fixed;
   left: 1vh;
@@ -88,7 +88,7 @@ header.header .nav-hamberger-icon::after {
   transition: all 0.3 ease-in-out;
 }
 
-header.header .nav-hamberger-icon.open::before {
+main.head header.header .nav-hamberger-icon.open::before {
   position: fixed;
   -webkit-animation-name: hamberger-fall;
           animation-name: hamberger-fall;
@@ -96,14 +96,14 @@ header.header .nav-hamberger-icon.open::before {
           animation-duration: 0.4s;
 }
 
-header.header .nav-hamberger-icon.open::after {
+main.head header.header .nav-hamberger-icon.open::after {
   -webkit-animation-name: hamberger-rise;
           animation-name: hamberger-rise;
   -webkit-animation-duration: 0.4s;
           animation-duration: 0.4s;
 }
 
-header.header .nav-hamberger-icon.close::before {
+main.head header.header .nav-hamberger-icon.close::before {
   position: fixed;
   -webkit-animation-name: hamberger-rise;
           animation-name: hamberger-rise;
@@ -111,10 +111,52 @@ header.header .nav-hamberger-icon.close::before {
           animation-duration: 0.4s;
 }
 
-header.header .nav-hamberger-icon.close::after {
+main.head header.header .nav-hamberger-icon.close::after {
   -webkit-animation-name: hamberger-fall;
           animation-name: hamberger-fall;
   -webkit-animation-duration: 0.4s;
           animation-duration: 0.4s;
+}
+
+main.head .nav {
+  position: fixed;
+  height: 46vh;
+  width: 100%;
+  top: 12vh;
+  background-color: #3e90cc;
+}
+
+main.head .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 0 2rem 0;
+}
+
+main.head .nav-items .nav-item {
+  color: #a8adb1;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main.head .nav a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=Header.css.map */

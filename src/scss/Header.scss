@@ -13,75 +13,106 @@ $hamberger-movement: 0.4s;
     transform: translateY(-1vh);
   }
 }
+main.head {
+  header.header {
+    position: fixed;
+    height: 12vh;
+    width: 100%;
+    background-color: $background-header;
 
-header.header {
-  position: fixed;
-  height: 12vh;
-  width: 100vw;
-  background-color: $background-header;
-  .nav-hamberger {
-    height: 8vh;
-    width: 8vh;
-    margin-top: 1vh;
-    margin-left: 1vh;
-    cursor: pointer;
-    @include transition-ease;
-
-    &-icon {
-      position: fixed;
-      left: 1vh;
-      top: 4.8vh;
-      height: 4px;
+    .nav-hamberger {
+      height: 8vh;
       width: 8vh;
-      background-color: $text-color;
+      margin-top: 1vh;
+      margin-left: 1vh;
+      cursor: pointer;
+      @include transition-ease;
 
-      &::before {
-        content: "";
+      &-icon {
         position: fixed;
         left: 1vh;
-        top: 2vh;
+        top: 4.8vh;
         height: 4px;
         width: 8vh;
         background-color: $text-color;
-        @include transition-ease;
-      }
 
-      &::after {
-        content: "";
-        position: fixed;
-        left: 1vh;
-        top: 8vh;
-        height: 4px;
-        width: 8vh;
-        background-color: $text-color;
-        @include transition-ease;
-      }
-
-      &.open {
         &::before {
+          content: "";
           position: fixed;
-          animation-name: hamberger-fall;
-          animation-duration: $hamberger-movement;
+          left: 1vh;
+          top: 2vh;
+          height: 4px;
+          width: 8vh;
+          background-color: $text-color;
+          @include transition-ease;
         }
 
         &::after {
-          animation-name: hamberger-rise;
-          animation-duration: $hamberger-movement;
-        }
-      }
-
-      &.close {
-        &::before {
+          content: "";
           position: fixed;
-          animation-name: hamberger-rise;
-          animation-duration: $hamberger-movement;
+          left: 1vh;
+          top: 8vh;
+          height: 4px;
+          width: 8vh;
+          background-color: $text-color;
+          @include transition-ease;
         }
 
-        &::after {
-          animation-name: hamberger-fall;
-          animation-duration: $hamberger-movement;
+        &.open {
+          &::before {
+            position: fixed;
+            animation-name: hamberger-fall;
+            animation-duration: $hamberger-movement;
+          }
+
+          &::after {
+            animation-name: hamberger-rise;
+            animation-duration: $hamberger-movement;
+          }
+        }
+
+        &.close {
+          &::before {
+            position: fixed;
+            animation-name: hamberger-rise;
+            animation-duration: $hamberger-movement;
+          }
+
+          &::after {
+            animation-name: hamberger-fall;
+            animation-duration: $hamberger-movement;
+          }
         }
       }
+    }
+  }
+
+  .nav {
+    position: fixed;
+    height: 46vh;
+    width: 100%;
+    top: 12vh;
+    background-color: $accent-color-1;
+    &-items {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      list-style: none;
+      height: 100%;
+      width: 100%;
+      padding: 2rem 0 2rem 0;
+      .nav-item {
+        color: $text-color-2;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        align-content: center;
+      }
+    }
+
+    a {
+      text-decoration: none;
     }
   }
 }
