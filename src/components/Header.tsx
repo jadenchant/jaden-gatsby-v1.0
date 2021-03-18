@@ -10,7 +10,7 @@ const Header = () => {
     const defaultHamberger = "nav-hamberger-icon";
     if (dropdown) {
       setDropdown(false);
-      setHamberger(defaultHamberger);
+      setHamberger(defaultHamberger + " close");
       console.log("dropdown set false");
     } else {
       setDropdown(true);

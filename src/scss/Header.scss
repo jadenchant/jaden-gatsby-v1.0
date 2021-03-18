@@ -1,12 +1,12 @@
 @import "config";
 
-@keyframes hamberger-upper {
+@keyframes hamberger-rise {
   50% {
     transform: translateY(1vh);
   }
 }
 
-@keyframes hamberger-lower {
+@keyframes hamberger-fall {
   50% {
     transform: translateY(-1vh);
   }
@@ -53,22 +53,31 @@ main.header {
         width: 8vh;
         background-color: $text-color;
         @include transition-ease;
-
-        &:hover {
-          background-color: green;
-        }
       }
 
       &.open {
         &::before {
           position: fixed;
-          animation-name: hamberger-upper;
-          animation-duration: 1s;
+          animation-name: hamberger-fall;
+          animation-duration: $hamberger-movement;
         }
 
         &::after {
-          animation-name: hamberger-lower;
-          animation-duration: 1s;
+          animation-name: hamberger-rise;
+          animation-duration: $hamberger-movement;
+        }
+      }
+
+      &.close {
+        &::before {
+          position: fixed;
+          animation-name: hamberger-rise;
+          animation-duration: $hamberger-movement;
+        }
+
+        &::after {
+          animation-name: hamberger-fall;
+          animation-duration: $hamberger-movement;
         }
       }
     }

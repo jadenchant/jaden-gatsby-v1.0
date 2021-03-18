@@ -10,28 +10,28 @@ h1 {
   font-size: 2rem;
 }
 
-@-webkit-keyframes hamberger-upper {
+@-webkit-keyframes hamberger-rise {
   50% {
     -webkit-transform: translateY(1vh);
             transform: translateY(1vh);
   }
 }
 
-@keyframes hamberger-upper {
+@keyframes hamberger-rise {
   50% {
     -webkit-transform: translateY(1vh);
             transform: translateY(1vh);
   }
 }
 
-@-webkit-keyframes hamberger-lower {
+@-webkit-keyframes hamberger-fall {
   50% {
     -webkit-transform: translateY(-1vh);
             transform: translateY(-1vh);
   }
 }
 
-@keyframes hamberger-lower {
+@keyframes hamberger-fall {
   50% {
     -webkit-transform: translateY(-1vh);
             transform: translateY(-1vh);
@@ -88,22 +88,33 @@ main.header .nav-hamberger-icon::after {
   transition: all 0.3 ease-in-out;
 }
 
-main.header .nav-hamberger-icon::after:hover {
-  background-color: green;
-}
-
 main.header .nav-hamberger-icon.open::before {
   position: fixed;
-  -webkit-animation-name: hamberger-upper;
-          animation-name: hamberger-upper;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-name: hamberger-fall;
+          animation-name: hamberger-fall;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 main.header .nav-hamberger-icon.open::after {
-  -webkit-animation-name: hamberger-lower;
-          animation-name: hamberger-lower;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-name: hamberger-rise;
+          animation-name: hamberger-rise;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+main.header .nav-hamberger-icon.close::before {
+  position: fixed;
+  -webkit-animation-name: hamberger-rise;
+          animation-name: hamberger-rise;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+main.header .nav-hamberger-icon.close::after {
+  -webkit-animation-name: hamberger-fall;
+          animation-name: hamberger-fall;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 /*# sourceMappingURL=Header.css.map */
