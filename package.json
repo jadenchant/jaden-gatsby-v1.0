@@ -5,7 +5,9 @@
   "description": "jaden-v1.0",
   "author": "Jaden Chant",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "jaden",
+    "chant"
   ],
   "scripts": {
     "develop": "gatsby develop",

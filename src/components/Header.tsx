@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
 import "../css/Header.css";
 
@@ -19,12 +19,21 @@ const Header = () => {
     }
   };
 
+  useEffect(() => {
+    window.onload = () => {
+      setDropdown(false);
+      setHamberger("nav-hamberger-icon");
+    };
+  });
+
   return (
-    <main className='header'>
-      <div className='nav-hamberger' onClick={handleClick}>
-        <span className={hamberger}></span>
-      </div>
-      <div className='title'>{/* <h1>Jaden Chant</h1> */}</div>
+    <main className='head'>
+      <header className='header'>
+        <div className='nav-hamberger' onClick={handleClick}>
+          <span className={hamberger}></span>
+        </div>
+        <div className='title'>{/* <h1>Jaden Chant</h1> */}</div>
+      </header>
     </main>
   );
 };

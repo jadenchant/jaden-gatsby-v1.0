@@ -1,5 +1,7 @@
 @import "config";
 
+$hamberger-movement: 0.4s;
+
 @keyframes hamberger-rise {
   50% {
     transform: translateY(1vh);
@@ -12,7 +14,7 @@
   }
 }
 
-main.header {
+header.header {
   position: fixed;
   height: 12vh;
   width: 100vw;
