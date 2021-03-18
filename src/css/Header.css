@@ -7,7 +7,14 @@
 
 h1 {
   color: #3e90cc;
-  font-size: 2rem;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @-webkit-keyframes hamberger-rise {
@@ -38,8 +45,20 @@ h1 {
   }
 }
 
+main.head {
+  font-family: "lora";
+}
+
 main.head header.header {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 12vh;
   width: 100%;
   z-index: +1;
@@ -47,10 +66,11 @@ main.head header.header {
 }
 
 main.head header.header .nav-hamberger {
+  position: fixed;
   height: 8vh;
   width: 8vh;
-  margin-top: 1vh;
-  margin-left: 1vh;
+  left: 1vh;
+  top: 1.4vh;
   cursor: pointer;
 }
 
@@ -88,7 +108,6 @@ main.head header.header .nav-hamberger-icon::after {
 }
 
 main.head header.header .nav-hamberger-icon.open::before {
-  position: fixed;
   -webkit-animation-name: hamberger-fall;
           animation-name: hamberger-fall;
   -webkit-animation-duration: 0.45s;
@@ -115,6 +134,14 @@ main.head header.header .nav-hamberger-icon.close::after {
           animation-name: hamberger-fall;
   -webkit-animation-duration: 0.45s;
           animation-duration: 0.45s;
+}
+
+main.head header.header .title {
+  font-size: 1.2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: default;
 }
 
 main.head .nav {

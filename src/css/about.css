@@ -7,6 +7,13 @@
 
 h1 {
   color: #3e90cc;
-  font-size: 2rem;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 /*# sourceMappingURL=about.css.map */

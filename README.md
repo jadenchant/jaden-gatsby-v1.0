@@ -5,3 +5,7 @@
 #### Mobile Styling First
 
 #### Large Screen Styling
+
+#### Remember to run before deployment
+
+gatsby build

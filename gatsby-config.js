@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "jaden-v1.0",
+    title: "Jaden Chant",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

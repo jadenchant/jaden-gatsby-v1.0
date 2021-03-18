@@ -14,9 +14,18 @@ $text-color-2: #a8adb1;
 
 h1 {
   color: $accent-color-1;
-  font-size: 2rem;
 }
 
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+// Transitions
 @mixin transition-ease {
   transition: all 0.3s ease-in-out;
 }

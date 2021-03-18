@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
+import "@fontsource/lora";
 import "../css/Header.css";
 
 const Header = () => {
@@ -34,7 +35,9 @@ const Header = () => {
         <div className='nav-hamberger' onClick={handleClick}>
           <span className={hamberger}></span>
         </div>
-        <div className='title'>{/* <h1>Jaden Chant</h1> */}</div>
+        <div className='title'>
+          <h1 className='noselect'>Jaden Chant</h1>
+        </div>
       </header>
       <div className={nav}>
         <ul className='nav-items'>

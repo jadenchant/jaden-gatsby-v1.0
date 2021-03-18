@@ -1,9 +1,11 @@
 @import "config";
 
+// Fixed variables
 $hamberger-movement: 0.45s;
 $header-height: 12vh;
 $nav-height: 46vh;
 
+// Keyframes for hamberger
 @keyframes hamberger-rise {
   50% {
     transform: translateY(1vh);
@@ -15,21 +17,33 @@ $nav-height: 46vh;
     transform: translateY(-1vh);
   }
 }
+
+// Head
 main.head {
+  font-family: "lora";
+
+  // Header
   header.header {
     position: fixed;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
     height: $header-height;
     width: 100%;
     z-index: +1;
     background-color: $background-header;
 
+    // Hamberger
     .nav-hamberger {
+      position: fixed;
       height: 8vh;
       width: 8vh;
-      margin-top: 1vh;
-      margin-left: 1vh;
+      left: 1vh;
+      top: 1.4vh;
       cursor: pointer;
 
+      // Hamberger icon
+      // Middle bar
       &-icon {
         position: fixed;
         left: 1vh;
@@ -38,6 +52,7 @@ main.head {
         width: 8vh;
         background-color: $text-color;
 
+        // Top bar
         &::before {
           content: "";
           position: fixed;
@@ -49,6 +64,7 @@ main.head {
           @include transition-ease;
         }
 
+        // Bottom bar
         &::after {
           content: "";
           position: fixed;
@@ -60,9 +76,9 @@ main.head {
           @include transition-ease;
         }
 
+        // Open animation top and bottom bar
         &.open {
           &::before {
-            position: fixed;
             animation-name: hamberger-fall;
             animation-duration: $hamberger-movement;
           }
@@ -73,6 +89,7 @@ main.head {
           }
         }
 
+        // Close animation top and bottom bar
         &.close {
           &::before {
             position: fixed;
@@ -87,13 +104,23 @@ main.head {
         }
       }
     }
+
+    // Title Jaden Chant
+    .title {
+      font-size: 1.2rem;
+      align-self: center;
+      cursor: default;
+    }
   }
 
+  // Nav dropdown
   .nav {
     position: fixed;
     height: $nav-height;
     width: 100%;
     background-color: $accent-color-1;
+
+    // Nav items
     &-items {
       display: flex;
       flex-direction: column;
@@ -104,6 +131,8 @@ main.head {
       height: 100%;
       width: 100%;
       padding: 2rem 0 2rem 0;
+
+      // Nav individual items
       .nav-item {
         color: $text-color-2;
         font-size: 2.8rem;
@@ -112,18 +141,21 @@ main.head {
       }
     }
 
+    // Initiol position dropdown not in view
     &.initial {
       position: absolute;
       top: $header-height - $nav-height;
       @include transition-ease-2;
     }
 
+    // Final position dropdown in view
     &.final {
       position: absolute;
       top: $header-height;
       @include transition-ease-2;
     }
 
+    // Links
     a {
       text-decoration: none;
     }
