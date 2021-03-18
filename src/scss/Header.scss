@@ -1,6 +1,8 @@
 @import "config";
 
-$hamberger-movement: 0.4s;
+$hamberger-movement: 0.45s;
+$header-height: 12vh;
+$nav-height: 46vh;
 
 @keyframes hamberger-rise {
   50% {
@@ -16,8 +18,9 @@ $hamberger-movement: 0.4s;
 main.head {
   header.header {
     position: fixed;
-    height: 12vh;
+    height: $header-height;
     width: 100%;
+    z-index: +1;
     background-color: $background-header;
 
     .nav-hamberger {
@@ -26,7 +29,6 @@ main.head {
       margin-top: 1vh;
       margin-left: 1vh;
       cursor: pointer;
-      @include transition-ease;
 
       &-icon {
         position: fixed;
@@ -89,9 +91,8 @@ main.head {
 
   .nav {
     position: fixed;
-    height: 46vh;
+    height: $nav-height;
     width: 100%;
-    top: 12vh;
     background-color: $accent-color-1;
     &-items {
       display: flex;
@@ -109,6 +110,18 @@ main.head {
         text-transform: uppercase;
         align-content: center;
       }
+    }
+
+    &.initial {
+      position: absolute;
+      top: $header-height - $nav-height;
+      @include transition-ease-2;
+    }
+
+    &.final {
+      position: absolute;
+      top: $header-height;
+      @include transition-ease-2;
     }
 
     a {

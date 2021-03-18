@@ -18,5 +18,9 @@ h1 {
 }
 
 @mixin transition-ease {
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin transition-ease-2 {
+  transition: all 0.45s ease-in-out;
 }

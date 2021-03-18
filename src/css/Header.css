@@ -42,6 +42,7 @@ main.head header.header {
   position: fixed;
   height: 12vh;
   width: 100%;
+  z-index: +1;
   background-color: #363c45;
 }
 
@@ -51,8 +52,6 @@ main.head header.header .nav-hamberger {
   margin-top: 1vh;
   margin-left: 1vh;
   cursor: pointer;
-  -webkit-transition: all 0.3 ease-in-out;
-  transition: all 0.3 ease-in-out;
 }
 
 main.head header.header .nav-hamberger-icon {
@@ -72,8 +71,8 @@ main.head header.header .nav-hamberger-icon::before {
   height: 4px;
   width: 8vh;
   background-color: #929a9f;
-  -webkit-transition: all 0.3 ease-in-out;
-  transition: all 0.3 ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 main.head header.header .nav-hamberger-icon::after {
@@ -84,45 +83,44 @@ main.head header.header .nav-hamberger-icon::after {
   height: 4px;
   width: 8vh;
   background-color: #929a9f;
-  -webkit-transition: all 0.3 ease-in-out;
-  transition: all 0.3 ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 main.head header.header .nav-hamberger-icon.open::before {
   position: fixed;
   -webkit-animation-name: hamberger-fall;
           animation-name: hamberger-fall;
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
+  -webkit-animation-duration: 0.45s;
+          animation-duration: 0.45s;
 }
 
 main.head header.header .nav-hamberger-icon.open::after {
   -webkit-animation-name: hamberger-rise;
           animation-name: hamberger-rise;
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
+  -webkit-animation-duration: 0.45s;
+          animation-duration: 0.45s;
 }
 
 main.head header.header .nav-hamberger-icon.close::before {
   position: fixed;
   -webkit-animation-name: hamberger-rise;
           animation-name: hamberger-rise;
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
+  -webkit-animation-duration: 0.45s;
+          animation-duration: 0.45s;
 }
 
 main.head header.header .nav-hamberger-icon.close::after {
   -webkit-animation-name: hamberger-fall;
           animation-name: hamberger-fall;
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
+  -webkit-animation-duration: 0.45s;
+          animation-duration: 0.45s;
 }
 
 main.head .nav {
   position: fixed;
   height: 46vh;
   width: 100%;
-  top: 12vh;
   background-color: #3e90cc;
 }
 
@@ -154,6 +152,20 @@ main.head .nav-items .nav-item {
   text-transform: uppercase;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+main.head .nav.initial {
+  position: absolute;
+  top: -34vh;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+
+main.head .nav.final {
+  position: absolute;
+  top: 12vh;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
 }
 
 main.head .nav a {
