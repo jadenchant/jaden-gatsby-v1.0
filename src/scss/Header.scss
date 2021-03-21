@@ -3,7 +3,7 @@
 // Fixed variables
 $hamberger-movement: 0.45s;
 $header-height: 12vh;
-$nav-height: 46vh;
+$nav-height: 50vh;
 
 // Keyframes for hamberger
 @keyframes hamberger-rise {
@@ -130,7 +130,7 @@ main.head {
       list-style: none;
       height: 100%;
       width: 100%;
-      padding: 2rem 0 2rem 0;
+      padding: 1rem 0 1rem 0;
 
       // Nav individual items
       .nav-item {

@@ -65,6 +65,14 @@ const Header = () => {
           >
             Portfolio
           </Link>
+          <Link
+            to='/contact'
+            draggable='false'
+            className='nav-item'
+            activeClassName='current'
+          >
+            Contact
+          </Link>
         </ul>
       </div>
     </main>

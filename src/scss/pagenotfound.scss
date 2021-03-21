@@ -1,0 +1,20 @@
+@import "config";
+@import "Header";
+
+.not-found-page {
+  .content {
+    position: fixed;
+    display: flex;
+    box-sizing: border-box;
+    top: $header-height;
+    z-index: -1;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 3rem;
+      align-self: center;
+    }
+  }
+}
