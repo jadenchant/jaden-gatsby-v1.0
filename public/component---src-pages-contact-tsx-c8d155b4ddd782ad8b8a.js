@@ -1,0 +1,2 @@
+(self.webpackChunkjaden_v1_0=self.webpackChunkjaden_v1_0||[]).push([[650],{5424:function(e,t,n){"use strict";n.r(t);var c=n(7294),a=n(797),l=n(1969);t.default=function(){return c.createElement("main",{className:"contact"},c.createElement(a.Z,{title:"Contact",description:"contact me",kewords:"contact"}),c.createElement(l.Z,null))}}}]);
+//# sourceMappingURL=component---src-pages-contact-tsx-c8d155b4ddd782ad8b8a.js.map

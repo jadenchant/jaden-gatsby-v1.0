@@ -1,0 +1,2 @@
+(self.webpackChunkjaden_v1_0=self.webpackChunkjaden_v1_0||[]).push([[49],{564:function(e,t,a){"use strict";a.r(t);var n=a(7294),u=a(797),c=a(1969);t.default=function(){return n.createElement("main",{className:"about"},n.createElement(u.Z,{title:"About Me",description:"about me",kewords:"about"}),n.createElement(c.Z,null))}}}]);
+//# sourceMappingURL=component---src-pages-about-tsx-b27b217ab8ce9625989d.js.map

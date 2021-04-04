@@ -1,0 +1,2 @@
+(self.webpackChunkjaden_v1_0=self.webpackChunkjaden_v1_0||[]).push([[218],{938:function(e,n,t){"use strict";t.r(n);var a=t(7294),l=t(797),r=t(1969);n.default=function(){return a.createElement("main",{className:"not-found-page"},a.createElement(l.Z,{title:"404 Page Not Found",description:"page not found",kewords:"404"}),a.createElement(r.Z,null),a.createElement("div",{className:"content"},a.createElement("h2",null,"Error: 404 Page Not Found")))}}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-2733449df4bf9a5718e2.js.map

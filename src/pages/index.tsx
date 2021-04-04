@@ -7,7 +7,7 @@ import "../css/index.css";
 const IndexPage = () => {
   return (
     <main className='index'>
-      <Head title='Home' description='Homepage' kewords='home' />
+      <Head title='Home' description='homepage' kewords='home' />
       <Header />
       <section className='content'>
         <h1 className='title'>Home</h1>
