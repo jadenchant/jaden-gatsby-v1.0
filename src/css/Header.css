@@ -148,6 +148,7 @@ main.head .nav {
   position: fixed;
   height: 50vh;
   width: 100%;
+  z-index: 0;
   background-color: #3e90cc;
 }
 
@@ -182,14 +183,14 @@ main.head .nav-items .nav-item {
 }
 
 main.head .nav.initial {
-  position: absolute;
+  position: fixed;
   top: -38vh;
   -webkit-transition: all 0.45s ease-in-out;
   transition: all 0.45s ease-in-out;
 }
 
 main.head .nav.final {
-  position: absolute;
+  position: fixed;
   top: 12vh;
   -webkit-transition: all 0.45s ease-in-out;
   transition: all 0.45s ease-in-out;

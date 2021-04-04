@@ -118,6 +118,7 @@ main.head {
     position: fixed;
     height: $nav-height;
     width: 100%;
+    z-index: 0;
     background-color: $accent-color-1;
 
     // Nav items
@@ -143,14 +144,14 @@ main.head {
 
     // Initiol position dropdown not in view
     &.initial {
-      position: absolute;
+      position: fixed;
       top: $header-height - $nav-height;
       @include transition-ease-2;
     }
 
     // Final position dropdown in view
     &.final {
-      position: absolute;
+      position: fixed;
       top: $header-height;
       @include transition-ease-2;
     }
