@@ -13,7 +13,7 @@ const IndexPage = () => {
         <h1 className='title'>Home</h1>
         <div className='intro'>
           <p>
-            Hello, I'm Jaden Chant. I am a Front-End Web Developer. I love to
+            Hello, I'm Jaden Chant. I am a Web Developer. I love to
             learn new skills and develop beautiful websites.
           </p>
         </div>

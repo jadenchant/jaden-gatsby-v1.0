@@ -139,6 +139,25 @@ main.head {
         font-size: 2.8rem;
         text-transform: uppercase;
         align-content: center;
+
+        &::after {
+          content: "";
+          display: block;
+          position: relative;
+          width: 0%;
+          height: 2px;
+          bottom: -3px;
+          background-color: $text-color-2;
+          transition-property: left, right;
+          // transition-duration: 3s;
+          // transition-timing-function: ease-out;
+          @include transition-ease-after-nav;
+        }
+
+        &:hover::after {
+          width: 100%;
+          @include transition-ease-after-nav;
+        }
       }
     }
 

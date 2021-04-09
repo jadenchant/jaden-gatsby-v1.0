@@ -167,6 +167,7 @@ main.head .nav {
   position: fixed;
   height: 50vh;
   width: 100%;
+  z-index: 0;
   background-color: #3e90cc;
 }
 
@@ -198,6 +199,26 @@ main.head .nav-items .nav-item {
   text-transform: uppercase;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+main.head .nav-items .nav-item::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  background-color: #a8adb1;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+main.head .nav-items .nav-item:hover::after {
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 main.head .nav.initial {

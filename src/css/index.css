@@ -201,6 +201,26 @@ main.head .nav-items .nav-item {
       align-content: center;
 }
 
+main.head .nav-items .nav-item::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  background-color: #a8adb1;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+main.head .nav-items .nav-item:hover::after {
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 main.head .nav.initial {
   position: fixed;
   top: -38vh;
