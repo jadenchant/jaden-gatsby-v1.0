@@ -206,7 +206,7 @@ main.head .nav-items .nav-item::after {
   display: block;
   position: relative;
   width: 0%;
-  height: 2px;
+  height: 3px;
   bottom: -3px;
   background-color: #a8adb1;
   -webkit-transition-property: left, right;
@@ -273,12 +273,19 @@ section.content .container.social {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 section.content .container.social a #github {
+  fill: #3e90cc;
+}
+
+section.content .container.social a #instagram {
+  fill: #3e90cc;
+}
+
+section.content .container.social a #twitter {
   fill: #3e90cc;
 }
 /*# sourceMappingURL=index.css.map */

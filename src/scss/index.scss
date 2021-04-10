@@ -30,8 +30,14 @@ section.content {
       height: 20vh;
       width: 100%;
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
       a #github {
+        fill: $accent-color-1;
+      }
+      a #instagram {
+        fill: $accent-color-1;
+      }
+      a #twitter {
         fill: $accent-color-1;
       }
     }
