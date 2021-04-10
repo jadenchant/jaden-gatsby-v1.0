@@ -3,6 +3,7 @@ import { navigate } from "gatsby";
 import { useContact } from "../components/useContact";
 import Head from "../components/Head";
 import Header from "../components/Header";
+import Social from "../components/Social";
 import "../css/contact.css";
 
 const Contact = () => {
@@ -78,6 +79,7 @@ const Contact = () => {
             Next
           </button>
         </form>
+        <Social />
       </section>
     </main>
   );
