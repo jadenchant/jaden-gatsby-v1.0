@@ -4,7 +4,7 @@
     "sources": [
         "../scss/contact.scss",
         "../scss/_config.scss",
-        "../scss/content.scss",
+        "../scss/_content.scss",
         "../scss/_config.scss",
         "../scss/Header.scss",
         "../scss/_config.scss"

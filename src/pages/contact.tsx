@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { navigate } from "gatsby";
-import { useContact } from "../components/useContact";
+import { useContact } from "../hooks/useContact";
 import Head from "../components/Head";
 import Header from "../components/Header";
 import Social from "../components/Social";
 import "../css/contact.css";
 
+// ALso add Google Authentication
 const Contact = () => {
   const [values, handleChange] = useContact({
     fname: "",

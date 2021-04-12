@@ -2,9 +2,12 @@ import React from "react";
 import Head from "../components/Head";
 import Header from "../components/Header";
 import Social from "../components/Social";
+// import useSiteMetadata from "../hooks/useSiteMetadata";
 import "../css/pagenotfound.css";
 
-const NotFoundPage = () => {
+// Not working
+const NotFoundPage = ({ location }) => {
+  // const { siteURL } = useSiteMetadata();
   return (
     <main className='not-found-page'>
       <Head
@@ -13,10 +16,10 @@ const NotFoundPage = () => {
         kewords='404'
       />
       <Header />
-      <div className='content'>
+      <section className='content'>
         <h2>Error: 404 Page Not Found</h2>
         <Social />
-      </div>
+      </section>
     </main>
   );
 };

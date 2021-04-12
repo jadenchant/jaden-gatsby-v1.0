@@ -515,28 +515,4 @@ main.head .nav.final {
 main.head .nav a {
   text-decoration: none;
 }
-
-.not-found-page .content {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  top: 12vh;
-  z-index: -1;
-  width: 100%;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.not-found-page .content h2 {
-  font-size: 3rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
 /*# sourceMappingURL=pagenotfound.css.map */

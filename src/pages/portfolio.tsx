@@ -14,6 +14,8 @@ const Portfolio = () => {
       />
       <Header />
       <section className='content'>
+        {/* Use SQL and a database to fetch for projects */}
+
         <Social />
       </section>
     </main>
