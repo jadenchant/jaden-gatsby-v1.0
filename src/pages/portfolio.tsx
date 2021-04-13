@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import firebase from "gatsby-plugin-firebase";
 import Head from "../components/Head";
 import Header from "../components/Header";
 import Social from "../components/Social";
 import "../css/portfolio.css";
 
 const Portfolio = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    firebase.database().ref("/pages");
+  });
+
   return (
     <main className='portfolio'>
       <Head
