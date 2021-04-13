@@ -3,4 +3,4 @@ node_modules/
 .vscode
 .firebase
 .prettier*
-gatsby-config
+gatsby-config.js

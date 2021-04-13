@@ -9,8 +9,14 @@ const Portfolio = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    firebase.database().ref("/pages");
-  });
+    firebase
+      .database()
+      .ref("/data/pages/")
+      .once("value")
+      .then(snapshot => {
+        setData(snapshot.val());
+      });
+  }, []);
 
   return (
     <main className='portfolio'>
@@ -22,7 +28,7 @@ const Portfolio = () => {
       <Header />
       <section className='content'>
         {/* Use SQL and a database to fetch for projects */}
-
+        {data}
         <Social />
       </section>
     </main>
