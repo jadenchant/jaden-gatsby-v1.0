@@ -1,6 +1,0 @@
-{
-  "formatOnSave": true,
-  "jsxSingleQuote": true,
-  "arrowParens": "avoid",
-  "semi": true
-}
