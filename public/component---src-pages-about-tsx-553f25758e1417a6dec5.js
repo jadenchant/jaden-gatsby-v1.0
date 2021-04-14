@@ -1,0 +1,2 @@
+(self.webpackChunkjaden_v1_0=self.webpackChunkjaden_v1_0||[]).push([[49],{564:function(e,t,n){"use strict";n.r(t);var a=n(7294),c=n(797),l=n(1969),u=n(6428);t.default=function(){return a.createElement("main",{className:"about"},a.createElement(c.Z,{title:"About Me",description:"about me",kewords:"about"}),a.createElement(l.Z,null),a.createElement("section",{className:"content"},a.createElement(u.Z,null)))}}}]);
+//# sourceMappingURL=component---src-pages-about-tsx-553f25758e1417a6dec5.js.map
