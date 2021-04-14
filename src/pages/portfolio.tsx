@@ -6,29 +6,51 @@ import Social from "../components/Social";
 import "../css/portfolio.css";
 
 const Portfolio = () => {
-  const [data, setData] = useState(null);
+  const [portfolio, setPortfolio] = useState(null);
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    firebase
-      .database()
-      .ref("/data/pages/")
-      .once("value")
-      .then(snapshot => {
-        setData(snapshot.val());
-      });
+    if (!portfolio) {
+      firebase
+        .database()
+        .ref("pages/portfolio")
+        .once("value")
+        .then(snapshot => {
+          setPortfolio(snapshot.val());
+        })
+        .catch(e => setError("Data Not Found: " + e));
+    }
   }, []);
+
+  const headComponent = (
+    <Head
+      title='Portfolio'
+      description='portfolio projects'
+      kewords='portfolio projects'
+    />
+  );
+
+  let portfolioDisplay;
+  if (!portfolio) {
+    portfolioDisplay = (
+      <div className='noInfo'>
+        <div>No Info</div>
+      </div>
+    );
+  } else {
+    portfolioDisplay = (
+      <div className='info'>
+        <div>{portfolio.data[0].name}</div>
+      </div>
+    );
+  }
 
   return (
     <main className='portfolio'>
-      <Head
-        title='Portfolio'
-        description='portfolio projects'
-        kewords='portfolio projects'
-      />
+      {headComponent}
       <Header />
       <section className='content'>
-        {/* Use SQL and a database to fetch for projects */}
-        {data}
+        {portfolioDisplay}
         <Social />
       </section>
     </main>
