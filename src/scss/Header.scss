@@ -30,7 +30,7 @@ main.head {
     box-sizing: border-box;
     height: $header-height;
     width: 100%;
-    z-index: +1;
+    z-index: 2;
     background-color: $background-header;
 
     // Hamberger
@@ -115,10 +115,9 @@ main.head {
 
   // Nav dropdown
   .nav {
-    position: fixed;
+    position: relative;
     height: $nav-height;
     width: 100%;
-    z-index: 0;
     background-color: $accent-color-1;
 
     // Nav items
@@ -165,6 +164,7 @@ main.head {
     &.initial {
       position: fixed;
       top: $header-height - $nav-height;
+      z-index: +1;
       @include transition-ease-2;
     }
 
@@ -172,6 +172,7 @@ main.head {
     &.final {
       position: fixed;
       top: $header-height;
+      z-index: +1;
       @include transition-ease-2;
     }
 
