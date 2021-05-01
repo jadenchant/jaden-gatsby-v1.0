@@ -11,6 +11,7 @@ const Contact = () => {
   const [lname, setLname] = useState("");
   const [email, setEmail] = useState("");
 
+  const [isError, setIsError] = useState(false);
   const [missingFname, setMissingFname] = useState("");
   const [missingLname, setMissingLname] = useState("");
   const [missingEmail, setMissingEmail] = useState("");
@@ -35,7 +36,7 @@ const Contact = () => {
     const formError = checkValidInputs();
 
     if (!formError) {
-      navigate("/form-submitted/");
+      navigate("/contact/success/");
     }
   }
 
@@ -73,6 +74,7 @@ const Contact = () => {
       }
     }
 
+    setIsError(missing);
     return missing;
   }
 
@@ -123,7 +125,7 @@ const Contact = () => {
           </button>
         </form>
 
-        <div className='input-error'>
+        <div className={isError ? "input-error" : "input-error-none"}>
           <ul>
             <li>{missingFname}</li>
             <li>{missingLname}</li>
