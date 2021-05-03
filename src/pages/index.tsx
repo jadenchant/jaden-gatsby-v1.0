@@ -14,8 +14,8 @@ const IndexPage = () => {
         <h1 className='title'>Home</h1>
         <div className='intro'>
           <p>
-            Hello, I'm Jaden Chant. I am a Web Developer. I love to learn new
-            skills and develop beautiful websites.
+            Hello, I'm Jaden Chant. I am an aspiring Web Developer. I love to
+            learn new skills and develop beautiful websites.
           </p>
         </div>
         <div className='container pages'></div>

@@ -382,34 +382,4 @@ main.head .nav a {
   text-decoration: none;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 0.5rem;
-}
-form .form-item {
-  margin: 0.5rem 0 0.5rem 0;
-}
-form button.form-submit {
-  margin: 0.5rem 0 0.5rem 0;
-}
-
-.input-error {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.input-error ul {
-  list-style: none;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  border-radius: 0.75rem;
-  background-color: #ff6666;
-}
-.input-error ul li {
-  margin: 0.5rem 0 0.5rem 0;
-}
-
 /*# sourceMappingURL=contact.css.map */

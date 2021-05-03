@@ -79,11 +79,11 @@ const Contact = () => {
   }
 
   return (
-    <main className='contact'>
+    <main className='contact flex'>
       <Head title='Contact' description='contact me' kewords='contact' />
       <Header />
-      <section className='content'>
-        <form>
+      <section className='content flex flex-col'>
+        <form className='flex-col justify-center items-center'>
           <label className='form-item'>
             <p className='form-item-name'>
               First Name <span className='required'>*</span>
@@ -93,7 +93,7 @@ const Contact = () => {
               type='string'
               value={fname}
               onChange={handleChange}
-              className='form-item-input'
+              className='border border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent'
             />
           </label>
           <label className='form-item'>
