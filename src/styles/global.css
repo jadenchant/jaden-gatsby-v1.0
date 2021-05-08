@@ -3,12 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply m-0;
-    @apply p-0;
-    @apply box-border;
-  }
-
   @font-face {
     font-family: "lora";
     font-weight: 400;
