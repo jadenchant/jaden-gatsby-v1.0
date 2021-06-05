@@ -36,7 +36,7 @@ const Header = () => {
           <span className={hamberger}></span>
         </div>
         <div className='title'>
-          <h1 className='noselect'>Jaden Chant</h1>
+          <h1 className='select-none'>Jaden Chant</h1>
         </div>
       </header>
       <div className={nav}>

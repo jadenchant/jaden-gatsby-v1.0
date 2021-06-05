@@ -82,8 +82,8 @@ const Contact = () => {
     <main className='font-lora'>
       <Head title='Contact' description='contact me' kewords='contact' />
       <Header />
-      <section className='flex flex-col w-full top-20 relative'>
-        <form className=''>
+      <section className='flex flex-col w-full top-28 relative'>
+        <form className='flex flex-col'>
           <label className=''>
             <p className='text-center my-2 text-xl'>
               First Name: <span className='required'>*</span>
@@ -94,7 +94,7 @@ const Contact = () => {
                 type='text'
                 value={fname}
                 onChange={handleChange}
-                className='w-4/6 rounded'
+                className='w-4/6 md:w-1/3 xl:w-1/5 rounded'
               />
             </div>
           </label>
@@ -108,7 +108,7 @@ const Contact = () => {
                 type='text'
                 value={lname}
                 onChange={handleChange}
-                className='w-4/6 rounded'
+                className='w-4/6 md:w-1/3 xl:w-1/5 rounded'
               />
             </div>
           </label>
@@ -122,22 +122,22 @@ const Contact = () => {
                 type='email'
                 value={email}
                 onChange={handleChange}
-                className='w-4/6 rounded'
+                className='w-4/6 md:w-1/3 xl:w-1/5 rounded'
               />
             </div>
           </label>
-          <div className='text-center my-2 text-xl'>
+          <div className='text-center my-4 text-xl'>
             <button
               onClick={handleSubmit}
-              className='py-2 px-4 rounded-md bg-blue-700 text-blue-50'
+              className='py-2 px-4 rounded-md bg-blue-700 text-blue-50 select-none'
             >
               Next
             </button>
           </div>
         </form>
 
-        <div className={isError ? "" : ""}>
-          <ul>
+        <div className={isError ? "flex justify-center w-full" : ""}>
+          <ul className={isError ? "w-80 p-4 bg-red-700 select-none" : ""}>
             <li>{missingFname}</li>
             <li>{missingLname}</li>
             <li>{missingEmail}</li>

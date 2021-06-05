@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import Head from "../components/Head";
 import Header from "../components/Header";
 import Social from "../components/Social";
