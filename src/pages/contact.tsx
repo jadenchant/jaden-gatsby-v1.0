@@ -82,7 +82,7 @@ const Contact = () => {
     <main className='font-lora'>
       <Head title='Contact' description='contact me' kewords='contact' />
       <Header />
-      <section className='flex flex-col w-full top-28 relative'>
+      <section className='flex flex-col w-full top-28 relative '>
         <form className='flex flex-col'>
           <label className=''>
             <p className='text-center my-2 text-xl'>
@@ -137,7 +137,13 @@ const Contact = () => {
         </form>
 
         <div className={isError ? "flex justify-center w-full" : ""}>
-          <ul className={isError ? "w-80 p-4 bg-red-700 select-none" : ""}>
+          <ul
+            className={
+              isError
+                ? "w-80 p-4 bg-red-600 text-white select-none rounded"
+                : ""
+            }
+          >
             <li>{missingFname}</li>
             <li>{missingLname}</li>
             <li>{missingEmail}</li>

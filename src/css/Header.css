@@ -8,6 +8,10 @@ h1 {
   color: #3e90cc;
 }
 
+body {
+  background-color: #d1d5db;
+}
+
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;

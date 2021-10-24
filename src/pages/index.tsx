@@ -9,7 +9,7 @@ const IndexPage = () => {
     <main className='index'>
       <Head title='Home' description='homepage' kewords='home' />
       <Header />
-      <section className='content'>
+      <section className='content bg-gray-300'>
         <h1 className='text-3xl px-8 py-10 font-bold uppercase'>Home</h1>
         <div className='text-2xl px-8 py-0 text-center'>
           <p>

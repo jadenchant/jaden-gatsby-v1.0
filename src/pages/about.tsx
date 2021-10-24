@@ -9,7 +9,7 @@ const About = () => {
     <main className='about'>
       <Head title='About Me' description='about me' kewords='about' />
       <Header />
-      <section className='content'>
+      <section className='content w-full pt-8'>
         <Social />
       </section>
     </main>
