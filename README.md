@@ -12,4 +12,4 @@ Also uses React components and hooks like `useState` and `useEffect` hooks.
 
 _Only `git rm --cache` files with private keys_  
 _Also then keep a backup file to not loose that info_
-_'sass --watch src/scss:src/css'_
+_SASS Compiler `sass --watch src/scss:src/css`_

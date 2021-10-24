@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import Head from "../components/Head";
 import Header from "../components/Header";
 import Social from "../components/Social";
@@ -10,12 +9,12 @@ const IndexPage = () => {
     <main className='index'>
       <Head title='Home' description='homepage' kewords='home' />
       <Header />
-      <section className='content'>
-        <h1 className='title'>Home</h1>
-        <div className='intro'>
+      <section className='content bg-gray-300'>
+        <h1 className='text-3xl px-8 py-10 font-bold uppercase'>Home</h1>
+        <div className='text-2xl px-8 py-0 text-center'>
           <p>
-            Hello, I'm Jaden Chant. I am a Web Developer. I love to learn new
-            skills and develop beautiful websites.
+            Hello, I'm Jaden Chant. I am an aspiring Web Developer. I love to
+            learn new skills and develop beautiful websites.
           </p>
         </div>
         <div className='container pages'></div>

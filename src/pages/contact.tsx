@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { navigate } from "gatsby";
 import Head from "../components/Head";
 import Header from "../components/Header";
-import Social from "../components/Social";
-import "../css/contact.css";
+// import Social from "../components/Social";
+// import "../css/contact.css";
 
 // ALso add Google Authentication
 const Contact = () => {
@@ -79,54 +79,71 @@ const Contact = () => {
   }
 
   return (
-    <main className='contact'>
+    <main className='font-lora'>
       <Head title='Contact' description='contact me' kewords='contact' />
       <Header />
-      <section className='content'>
-        <form>
-          <label className='form-item'>
-            <p className='form-item-name'>
-              First Name <span className='required'>*</span>
+      <section className='flex flex-col w-full top-28 relative '>
+        <form className='flex flex-col'>
+          <label className=''>
+            <p className='text-center my-2 text-xl'>
+              First Name: <span className='required'>*</span>
             </p>
-            <input
-              name='fname'
-              type='string'
-              value={fname}
-              onChange={handleChange}
-              className='form-item-input'
-            />
+            <div className='text-center'>
+              <input
+                name='fname'
+                type='text'
+                value={fname}
+                onChange={handleChange}
+                className='w-4/6 md:w-1/3 xl:w-1/5 rounded'
+              />
+            </div>
           </label>
-          <label className='form-item'>
-            <p className='form-item-name'>
-              Last Name <span className='required'>*</span>
+          <label className=''>
+            <p className='text-center my-2 text-xl'>
+              Last Name: <span className='required'>*</span>
             </p>
-            <input
-              name='lname'
-              type='string'
-              value={lname}
-              onChange={handleChange}
-              className='form-item-input'
-            />
+            <div className='text-center'>
+              <input
+                name='lname'
+                type='text'
+                value={lname}
+                onChange={handleChange}
+                className='w-4/6 md:w-1/3 xl:w-1/5 rounded'
+              />
+            </div>
           </label>
-          <label className='form-item'>
-            <p className='form-item-name'>
+          <label className=''>
+            <p className='text-center my-2 text-xl'>
               Email: <span className='required'>*</span>
             </p>
-            <input
-              name='email'
-              type='string'
-              value={email}
-              onChange={handleChange}
-              className='form-item-input'
-            />
+            <div className='text-center'>
+              <input
+                name='email'
+                type='email'
+                value={email}
+                onChange={handleChange}
+                className='w-4/6 md:w-1/3 xl:w-1/5 rounded'
+              />
+            </div>
           </label>
-          <button onClick={handleSubmit} className='form-submit'>
-            Next
-          </button>
+          <div className='text-center my-4 text-xl'>
+            <button
+              onClick={handleSubmit}
+              className='py-2 px-4 rounded-md bg-blue-700 text-blue-50 select-none'
+            >
+              Next
+            </button>
+          </div>
         </form>
 
-        <div className={isError ? "input-error" : "input-error-none"}>
-          <ul>
+        <div className={isError ? "flex justify-center w-full" : ""}>
+          <ul
+            className={
+              isError
+                ? "w-80 p-4 bg-red-600 text-white select-none rounded"
+                : ""
+            }
+          >
             <li>{missingFname}</li>
             <li>{missingLname}</li>
             <li>{missingEmail}</li>
@@ -134,7 +151,7 @@ const Contact = () => {
           </ul>
         </div>
 
-        <Social />
+        {/* <Social /> */}
       </section>
     </main>
   );

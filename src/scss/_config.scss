@@ -1,4 +1,4 @@
-$background-color: #dfe0e2;
+$background-color: #d1d5db;
 $background-header: #363c45;
 $accent-color-1: #3e90cc;
 $accent-color-2: #ff6666;
@@ -14,6 +14,10 @@ $text-color-2: #a8adb1;
 
 h1 {
   color: $accent-color-1;
+}
+
+body {
+  background-color: $background-color;
 }
 
 .noselect {
