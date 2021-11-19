@@ -3,7 +3,7 @@ import "../css/index.css";
 
 const Social = () => {
   return (
-    <div className='container social h-24'>
+    <div className='social flex justify-around h-40 w-full'>
       <div className='hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a'>
         <a href='https://www.instagram.com/jadenchant/' className='hi-icon'>
           <svg
