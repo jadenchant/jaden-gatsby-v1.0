@@ -18,25 +18,20 @@ section.content {
     padding: 2vh 4.5vw 0 4.5vw;
   }
 
-  .container {
-    padding: 2vw;
-
-    &.social {
-      position: relative;
-      bottom: 0;
-      display: flex;
-      width: 100%;
-      align-items: center;
-      justify-content: space-around;
-      a #github {
-        fill: $accent-color-1;
-      }
-      a #instagram {
-        fill: $accent-color-1;
-      }
-      a #twitter {
-        fill: $accent-color-1;
-      }
+  .social {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a #github {
+      fill: $accent-color-1;
+    }
+    a #instagram {
+      fill: $accent-color-1;
+    }
+    a #twitter {
+      fill: $accent-color-1;
     }
   }
 }

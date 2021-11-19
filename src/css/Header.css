@@ -39,7 +39,7 @@ main.head header.header {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  height: 12vh;
+  height: 86px;
   width: 100%;
   z-index: 2;
   background-color: #363c45;
@@ -104,7 +104,7 @@ main.head header.header .title {
 }
 main.head .nav {
   position: relative;
-  height: 50vh;
+  height: 385px;
   width: 100%;
   background-color: #3e90cc;
 }
@@ -142,13 +142,13 @@ main.head .nav-items .nav-item:hover::after {
 }
 main.head .nav.initial {
   position: fixed;
-  top: -38vh;
+  top: -299px;
   z-index: 1;
   transition: all 0.45s ease-in-out;
 }
 main.head .nav.final {
   position: fixed;
-  top: 12vh;
+  top: 86px;
   z-index: 1;
   transition: all 0.45s ease-in-out;
 }

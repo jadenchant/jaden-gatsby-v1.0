@@ -50,7 +50,9 @@ const Portfolio = () => {
       {headComponent}
       <Header />
       <section className='content'>
-        {portfolioDisplay}
+        <div className='flex content-center justify-center py-7'>
+          {portfolioDisplay}
+        </div>
         <Social />
       </section>
     </main>

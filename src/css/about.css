@@ -85,7 +85,7 @@ main.head header.header {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  height: 12vh;
+  height: 86px;
   width: 100%;
   z-index: 2;
   background-color: #363c45;
@@ -150,7 +150,7 @@ main.head header.header .title {
 }
 main.head .nav {
   position: relative;
-  height: 50vh;
+  height: 385px;
   width: 100%;
   background-color: #3e90cc;
 }
@@ -188,13 +188,13 @@ main.head .nav-items .nav-item:hover::after {
 }
 main.head .nav.initial {
   position: fixed;
-  top: -38vh;
+  top: -299px;
   z-index: 1;
   transition: all 0.45s ease-in-out;
 }
 main.head .nav.final {
   position: fixed;
-  top: 12vh;
+  top: 86px;
   z-index: 1;
   transition: all 0.45s ease-in-out;
 }
@@ -206,7 +206,7 @@ section.content {
   font-family: "lora";
   position: relative;
   width: 100%;
-  top: 12vh;
+  top: 86px;
   z-index: 0;
 }
 section.content h1.title {
@@ -217,24 +217,20 @@ section.content .intro {
   font-size: 1.4rem;
   padding: 2vh 4.5vw 0 4.5vw;
 }
-section.content .container {
-  padding: 2vw;
-}
-section.content .container.social {
+section.content .social {
   position: relative;
   bottom: 0;
   display: flex;
-  width: 100%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
-section.content .container.social a #github {
+section.content .social a #github {
   fill: #3e90cc;
 }
-section.content .container.social a #instagram {
+section.content .social a #instagram {
   fill: #3e90cc;
 }
-section.content .container.social a #twitter {
+section.content .social a #twitter {
   fill: #3e90cc;
 }
 
